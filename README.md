@@ -41,10 +41,10 @@ MUX (2:1)	Multiplexer	Selects one input based on control signal.
 D-Latch	Data Latch	Level-sensitive storage element for sequential circuits.
 🧩 Applications
 
-ASIC and SoC Digital Core Libraries
+1.ASIC and SoC Digital Core Libraries
 
-Arithmetic Logic Units (ALU)
+2.Arithmetic Logic Units (ALU)
 
-Memory and Control Logic Blocks
+3.Memory and Control Logic Blocks
 
-Standard Cell Libraries for Physical Design Flow
+4.Standard Cell Libraries for Physical Design Flow

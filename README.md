@@ -1,5 +1,5 @@
 
-# Digiyal layouts
+# Digital layouts
 Standard cells are the fundamental building blocks of digital VLSI design.
 Each cell implements a specific logic function (e.g., inverter, NAND, XOR, MUX, D-Latch) and is optimized for area, performance, and power.
 These cells are designed with uniform height and routing tracks, enabling automated place-and-route integration in larger digital systems.

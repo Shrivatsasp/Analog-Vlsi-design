@@ -1,5 +1,3 @@
-# Analog-Vlsi-design
-Analog &amp; Digital Layout Design Portfolio — CMOS Op-Amp, Standard Cell, and Bit-1 Block Projects | Cadence Virtuoso | Mentor Calibre | DRC &amp; LVS Verified.
 
 # Digiyal layouts
 Standard cells are the fundamental building blocks of digital VLSI design.

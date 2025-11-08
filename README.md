@@ -1,50 +1,69 @@
-# Analog-Vlsi-design
-Analog &amp; Digital Layout Design Portfolio — CMOS Op-Amp, Standard Cell, and Bit-1 Block Projects | Cadence Virtuoso | Mentor Calibre | DRC &amp; LVS Verified.
+# Bit1 Block Digital Design (Mini Project)
 
-# Digital layouts
-Standard cells are the fundamental building blocks of digital VLSI design.
-Each cell implements a specific logic function (e.g., inverter, NAND, XOR, MUX, D-Latch) and is optimized for area, performance, and power.
-These cells are designed with uniform height and routing tracks, enabling automated place-and-route integration in larger digital systems.
-Standard cells are pre-characterized logic gates and sequential elements used to implement complex digital circuits efficiently.
-Each cell is designed at the transistor level and verified for:
+The Bit1 Block is a combinational digital circuit that counts the number of logic ‘1’s in its 6-bit input and provides the binary equivalent of that count as output.
+It represents a hierarchical design approach, combining smaller verified sub-blocks into a single top-level layout.
 
-Electrical correctness — ensuring functionality across process, voltage, and temperature (PVT) corners
+🧱 Sub-Blocks Used
+Sub-Block	Function
+2-Input AND Gate	Basic logical AND function
+3-Input AND Gate	Extends logic conjunction for three inputs
+OR Gate	Performs logical addition
+XOR Gate	Outputs HIGH when inputs differ
+Full Adder	Adds three 1-bit inputs (A, B, Cin)
+3-Bit Ones Block	Counts the number of ones in 3-bit input
 
-Physical correctness — adhering to design rules (DRC) and layout-versus-schematic (LVS) compliance
+Each sub-block is verified with truth tables and testbench waveforms to ensure functional correctness.
 
-🧱 Key Characteristics
+⚙️ Working Principle
 
-Fixed Height, Variable Width: Allows consistent power/ground rail alignment and easy tiling during place-and-route.
+The Bit1 Block processes six input bits to compute how many are logic HIGH (1).
+It uses combinational adders and logic gates arranged hierarchically to perform bit counting.
 
-Power and Ground Rails: Run horizontally at the top and bottom for uniform connectivity.
+Output (M2, M1, M0)
+=
+Binary representation of total 1’s in input
+Output (M2, M1, M0)=Binary representation of total 1’s in input
+📈 Performance Analysis
+Process	Voltage	Temp	TPLH	TPHL	Current
+FF	1.98 V	0 °C	618.87 ps	696.24 ps	1.52 µA
+TT	1.8 V	27 °C	849.22 ps	927.60 ps	1.33 µA
+SS	1.62 V	100 °C	1.138 fs	1.918 fs	1.21 µA
 
-Routing Tracks: Provide predictable metal layers for interconnect routing.
+Total Transistors: 228
+Total Layout Area: 997.92 µm²
 
-Library Compatibility: Cells follow the same design rules and track pitch, making them interchangeable within the same technology node.
+🧩 Floorplan and Layout
 
-🧠 Design Process
+Designed and routed hierarchically using Cadence Virtuoso.
 
-Transistor Sizing – Optimize width/length for drive strength and delay.
+Power mesh integrated for stable distribution.
 
-Layout Design – Place PMOS and NMOS transistors in rows, ensuring symmetry and minimal diffusion breaks.
+Each sub-block (Full Adder, 3-Bit Ones, and Bit1 Block) verified DRC & LVS clean using Mentor Calibre.
 
-DRC & LVS Verification – Validate that layout meets foundry rules and matches the schematic.
+⚙️ Applications
 
-Characterization – Extract timing, power, and functional models for synthesis and P&R tools.
+Digital Signal Processing (DSP)
 
-🧰 Cells Designed in this Portfolio
-Cell	Function	Description
-INV	Inverter	Basic NOT gate, inverts input logic.
-NAND	NAND Gate	Performs AND followed by inversion; universal logic gate.
-XOR	Exclusive OR	Outputs HIGH when inputs differ.
-MUX (2:1)	Multiplexer	Selects one input based on control signal.
-D-Latch	Data Latch	Level-sensitive storage element for sequential circuits.
-🧩 Applications
+Arithmetic Logic Units (ALU)
 
-1.ASIC and SoC Digital Core Libraries
+Parity and Error Detection Circuits
 
-2.Arithmetic Logic Units (ALU)
+🎯 Learning Outcomes
 
-3.Memory and Control Logic Blocks
+✅ Floorplanning and placement strategy
+✅ Hierarchical routing methodology
+✅ Power mesh creation
+✅ Debugging DRC/LVS errors
+✅ Timing path analysis and optimization
+
+⚙️ Challenges Faced
+
+Handling EXOR layout in 13 CPP
+
+Managing routing congestion in Ones_3_Bit block
+
+Longest path delay identification
+
+Ensuring power mesh compatibility during routing
 
 4.Standard Cell Libraries for Physical Design Flow

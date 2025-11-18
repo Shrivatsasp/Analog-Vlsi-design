@@ -1,6 +1,4 @@
-# Analog-Vlsi-design
-<br>
-Analog &amp; Digital Layout Design Portfolio — CMOS Op-Amp, Standard Cell, and Bit-1 Block Projects | Cadence Virtuoso | Mentor Calibre | DRC &amp; LVS Verified.
+
 <div align="center">
 
 # 🎨 **Analog Layout · VLSI Design**
@@ -43,3 +41,50 @@ This repository is designed for **Analog Layout / VLSI Design Engineers** to und
 ---
 
 # 🧠 **Analog Layout Golden Rules**
+
+---
+
+# 📐 **Common-Centroid Layout Example**
+<div align="center">
+<img src="https://img.icons8.com/color/240/circuit.png" width="180"/>
+  
+**A1–B1–B2–A2 pattern for optimal mismatch cancellation**
+</div>
+
+---
+
+# ⚡ **Key VLSI Terminology**
+| Term | Meaning |
+|------|---------|
+| **IR Drop** | Voltage drop due to metal resistance |
+| **Offset** | Unwanted difference between differential pair outputs |
+| **Mismatch** | Device variations due to process gradients & random effects |
+| **Ground Bounce** | Noise caused by fast switching currents |
+| **WPE** | Well Proximity Effect (changes near well edge) |
+| **AGND** | Clean ground for analog paths |
+| **End-cap effect** | Poly/diffusion distortion at edges |
+
+---
+
+# 🛠️ **Tools Used**
+- Cadence Virtuoso  
+- Mentor Calibre  
+- KLayout  
+- Python (scripts)  
+- GitHub for documentation  
+
+---
+
+# 📘 **Layout Checklist**
+✔ Same orientation  
+✔ Same diffusion edges  
+✔ Same contact count  
+✔ Balanced routing  
+✔ Guard ring symmetry  
+✔ Poly end-caps  
+✔ Density uniformity  
+✔ Dummy devices added  
+
+---
+
+

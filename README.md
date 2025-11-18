@@ -1,7 +1,7 @@
 
 <div align="center">
 
-# 🎨 **Analog Layout · VLSI Design **
+#  **Analog Layout · VLSI Design **
 ### Precision • Symmetry • Performance  
 A complete guide for analog layout engineers with best practices, examples, checklists, and real-world VLSI design notes.
 
